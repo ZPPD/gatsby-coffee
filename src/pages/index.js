@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/info"
 import Menu from "../components/Home/Menu"
+import Products from "../components/Home/Products"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -17,9 +18,11 @@ const IndexPage = ({ data }) => (
     />
     <Info />
     <Menu items={data.menu} />
+    <Products />
   </Layout>
 )
 
+// page query
 export const query = graphql`
   {
     img: file(relativePath: { eq: "default-background.jpeg" }) {
