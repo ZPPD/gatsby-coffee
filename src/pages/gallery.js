@@ -7,12 +7,12 @@ import BackgroundSection from "../components/Globals/BackgroundSection"
 // import Info from "../components/Home/info"
 import Story from "../components/Home/Story"
 
-const AboutPage = ({ data }) => (
+const GalleyPage = ({ data }) => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="Gallery" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="about us"
+      title="gallery"
       styleClass="about-background"
     />
     <Story />
@@ -22,7 +22,7 @@ const AboutPage = ({ data }) => (
 // page query
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "about-background.jpeg" }) {
+    img: file(relativePath: { eq: "default-background.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -32,4 +32,4 @@ export const query = graphql`
   }
 `
 
-export default AboutPage
+export default GalleyPage
