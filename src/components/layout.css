@@ -6,6 +6,11 @@
   --mainDark: #222;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--mainWhite);
   color: var(--mainDark);

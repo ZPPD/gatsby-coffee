@@ -4,7 +4,7 @@ import Title from "../Globals/Title"
 
 export default function gallery() {
   return (
-    <section id="gallery" className="mt-5 pt-5">
+    <section id="gallery" className="mt-0 mt-md-5 pt-5">
       <div class="container">
         <img src="https://source.unsplash.com/1600x900/?cofee" />
         <div className="caption">
