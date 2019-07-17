@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 // import Info from "../components/Home/info"
-import Story from "../components/Home/Story"
+import Gallery from "../components/Home/Gallery"
 
 const GalleyPage = ({ data }) => (
   <Layout>
@@ -15,7 +15,7 @@ const GalleyPage = ({ data }) => (
       title="gallery"
       styleClass="about-background"
     />
-    <Story />
+    <Gallery />
   </Layout>
 )
 
